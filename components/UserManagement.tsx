@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Pencil, Trash2 } from 'lucide-react';
 
-// Define types
+
 interface User {
   id: string;
   name: string;
@@ -124,8 +124,8 @@ const UserManagement = () => {
     <div className="container mx-auto p-4 space-y-4">
       {/* Form Card */}
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="p-6 border-b border-gray-200">
-          <h2 className="text-xl font-semibold">
+        <div className="p-6 bg-blue-600">
+          <h2 className="text-xl font-semibold text-white">
             {isEditing ? 'Edit User' : 'Add New User'}
           </h2>
         </div>
@@ -191,8 +191,8 @@ const UserManagement = () => {
 
       {/* Users List Card */}
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="p-6 border-b border-gray-200">
-          <h2 className="text-xl font-semibold">Users List</h2>
+        <div className="p-6 border-b bg-blue-500">
+          <h2 className="text-xl text-white font-semibold">Users List</h2>
         </div>
         <div className="p-6">
           {isLoading && <div className="text-center py-4">Loading...</div>}
